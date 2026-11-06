@@ -1,0 +1,9 @@
+{
+  "name": "Happier Development",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "postCreateCommand": "yarn install --frozen-lockfile && yarn build:packages",
+  "remoteUser": "vscode"
+}
